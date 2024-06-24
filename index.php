@@ -13,4 +13,21 @@ class Movie
         $this->category = $category;
         $this->rating = $rating;
     }
+
+
+    // metodi getter per ottenere le informazioni del film
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    public function getRating()
+    {
+        return $this->rating;
+    }
 }
