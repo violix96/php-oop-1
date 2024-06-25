@@ -6,7 +6,6 @@ class Movie
     private $category;
     private $rating;
 
-
     public function __construct($title, $category, $rating)
     {
         $this->title = $title;
@@ -14,23 +13,43 @@ class Movie
         $this->rating = $rating;
     }
 
-
     // metodi getter per ottenere le informazioni del film
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
 
-    public function getCategory()
+    // metodo setter per impostare il titolo
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
+
+    // metodo getter per ottenere la categoria
+    public function getCategory(): string
     {
         return $this->category;
     }
 
-    public function getRating()
+    // metodo setter per impostare la categoria
+    public function setCategory(string $category): void
+    {
+        $this->category = $category;
+    }
+
+    // metodo getter per ottenere il punteggio
+    public function getRating(): float
     {
         return $this->rating;
     }
+
+    // metodo setter per impostare il punteggio
+    public function setRating(float $rating): void
+    {
+        $this->rating = $rating;
+    }
 }
+
 
 // creazione delle istanze di movie. 
 
